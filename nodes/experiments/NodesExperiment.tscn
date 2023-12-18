@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0j6djt2bdm8u"]
+
+[ext_resource type="PackedScene" uid="uid://d24seugfhusuo" path="res://nodes/experiments/GameExperiment.tscn" id="1_opskc"]
+[ext_resource type="Script" path="res://nodes/experiments/NodesExperiment.gd" id="2_bpouj"]
+
+[node name="NodesExperiment" instance=ExtResource("1_opskc")]
+script = ExtResource("2_bpouj")
+
+[node name="Control" type="Control" parent="." index="0"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -100.0
+offset_top = -100.0
+offset_right = 100.0
+offset_bottom = 100.0
+
+[node name="Background" type="ColorRect" parent="Control" index="0"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 0
+offset_right = 200.0
+offset_bottom = 200.0
+
+[node name="Items" type="GridContainer" parent="Control" index="1"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 0
+offset_right = 200.0
+offset_bottom = 200.0
