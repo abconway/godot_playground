@@ -1,2 +1,0 @@
-extends GameExperiment
-class_name NodesExperiemnt

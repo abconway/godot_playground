@@ -2,11 +2,11 @@
 
 [ext_resource type="PackedScene" uid="uid://b0bo6yph8ygs5" path="res://nodes/screens/GameScreen.tscn" id="1_gqict"]
 [ext_resource type="Script" path="res://nodes/screens/PlayScreen.gd" id="2_b742t"]
-[ext_resource type="PackedScene" uid="uid://b0j6djt2bdm8u" path="res://nodes/experiments/NodesExperiment.tscn" id="3_nh4pd"]
+[ext_resource type="PackedScene" uid="uid://df8u00wdc8djt" path="res://nodes/experiments/multiplayer/MultiplayerExperiment.tscn" id="3_qgt13"]
 
 [node name="PlayScreen" instance=ExtResource("1_gqict")]
 script = ExtResource("2_b742t")
-experiment_scene = ExtResource("3_nh4pd")
+experiment_scene = ExtResource("3_qgt13")
 
 [node name="CenterContainer" type="CenterContainer" parent="." index="0"]
 layout_mode = 2
