@@ -1,7 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://df8u00wdc8djt"]
+[gd_scene load_steps=5 format=3 uid="uid://df8u00wdc8djt"]
 
 [ext_resource type="PackedScene" uid="uid://d24seugfhusuo" path="res://nodes/experiments/GameExperiment.tscn" id="1_ygwvl"]
 [ext_resource type="Script" path="res://nodes/experiments/multiplayer/MultiplayerExperiment.gd" id="2_gqc7y"]
+[ext_resource type="Script" path="res://nodes/experiments/multiplayer/Client.gd" id="3_x1gf6"]
+[ext_resource type="Script" path="res://nodes/experiments/multiplayer/Server.gd" id="4_h4lf5"]
 
 [node name="MultiplayerExperiment" instance=ExtResource("1_ygwvl")]
 script = ExtResource("2_gqc7y")
+
+[node name="Client" type="Node" parent="." index="0"]
+script = ExtResource("3_x1gf6")
+
+[node name="Server" type="Node" parent="." index="1"]
+script = ExtResource("4_h4lf5")

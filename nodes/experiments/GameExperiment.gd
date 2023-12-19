@@ -1,2 +1,2 @@
 extends Node2D
-class_name MultiplayerExperiment
+class_name GameExperiment
