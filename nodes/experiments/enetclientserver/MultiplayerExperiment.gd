@@ -1,4 +1,4 @@
-extends Node2D
+extends GameExperiment
 class_name MultiplayerExperiment
 
 

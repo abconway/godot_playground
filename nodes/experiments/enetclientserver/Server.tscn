@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://c5mpvs24ji61h"]
 
-[ext_resource type="Script" path="res://nodes/experiments/multiplayer/Server.gd" id="1_vh0sh"]
+[ext_resource type="Script" path="res://nodes/experiments/enetclientserver/Server.gd" id="1_vh0sh"]
 
 [node name="Server" type="Node2D"]
 script = ExtResource("1_vh0sh")

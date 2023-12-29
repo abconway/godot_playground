@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=3 uid="uid://daupoiiqy4cfa"]
+
+[ext_resource type="PackedScene" uid="uid://d24seugfhusuo" path="res://nodes/experiments/GameExperiment.tscn" id="1_v7p6k"]
+[ext_resource type="Script" path="res://nodes/experiments/packetpeerudp/packetpeerudp.gd" id="2_ahx8x"]
+
+[node name="PacketPeerUDPExperiement" instance=ExtResource("1_v7p6k")]
+script = ExtResource("2_ahx8x")
+
+[node name="LoginScreen" type="Control" parent="." index="0"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="UserLineEdit" type="LineEdit" parent="LoginScreen" index="0"]
+layout_mode = 0
+offset_left = -111.0
+offset_top = -37.0
+offset_right = -4.0
+offset_bottom = -6.0
+placeholder_text = "Unsername"
+metadata/_edit_use_anchors_ = true
+
+[node name="PasswordLineEdit" type="LineEdit" parent="LoginScreen" index="1"]
+layout_mode = 0
+offset_left = -112.0
+offset_top = 10.0
+offset_right = -3.0
+offset_bottom = 45.0
+placeholder_text = "Password"
+secret = true
+
+[node name="Label" type="Label" parent="LoginScreen" index="2"]
+layout_mode = 0
+offset_left = -111.0
+offset_top = 48.0
+offset_right = 99.0
+offset_bottom = 127.0
+
+[node name="Button" type="Button" parent="LoginScreen" index="3"]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 12.0
+offset_right = 61.0
+offset_bottom = 43.0
+text = "Login
+"
