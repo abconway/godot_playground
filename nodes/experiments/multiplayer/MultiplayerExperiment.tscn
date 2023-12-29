@@ -1,15 +1,38 @@
-[gd_scene load_steps=5 format=3 uid="uid://df8u00wdc8djt"]
+[gd_scene load_steps=3 format=3 uid="uid://df8u00wdc8djt"]
 
 [ext_resource type="PackedScene" uid="uid://d24seugfhusuo" path="res://nodes/experiments/GameExperiment.tscn" id="1_ygwvl"]
 [ext_resource type="Script" path="res://nodes/experiments/multiplayer/MultiplayerExperiment.gd" id="2_gqc7y"]
-[ext_resource type="Script" path="res://nodes/experiments/multiplayer/Client.gd" id="3_x1gf6"]
-[ext_resource type="Script" path="res://nodes/experiments/multiplayer/Server.gd" id="4_h4lf5"]
 
 [node name="MultiplayerExperiment" instance=ExtResource("1_ygwvl")]
 script = ExtResource("2_gqc7y")
 
-[node name="Client" type="Node" parent="." index="0"]
-script = ExtResource("3_x1gf6")
+[node name="Control" type="Control" parent="." index="0"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 275.0
+offset_bottom = 187.0
 
-[node name="Server" type="Node" parent="." index="1"]
-script = ExtResource("4_h4lf5")
+[node name="Label" type="Label" parent="Control" index="0"]
+layout_mode = 0
+offset_left = -25.0
+offset_top = -39.0
+offset_right = 26.0
+offset_bottom = -16.0
+text = "Select:"
+
+[node name="ClientButton" type="Button" parent="Control" index="1"]
+layout_mode = 0
+offset_left = -103.0
+offset_right = -10.0
+offset_bottom = 31.0
+text = "I'm a client"
+
+[node name="ServerButton" type="Button" parent="Control" index="2"]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 109.0
+offset_bottom = 31.0
+text = "I'm a server"
+
+[connection signal="pressed" from="Control/ClientButton" to="." method="_on_client_button_pressed"]
+[connection signal="pressed" from="Control/ServerButton" to="." method="_on_server_button_pressed"]

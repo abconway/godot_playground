@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://ewaj4kvksuxf"]
+
+[ext_resource type="Script" path="res://nodes/experiments/multiplayer/Client.gd" id="1_tstlr"]
+
+[node name="Client" type="Node2D"]
+script = ExtResource("1_tstlr")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "I'm a client"
